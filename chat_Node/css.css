@@ -1,0 +1,41 @@
+.center {
+	margin-left: auto; 
+	margin-right: auto;
+	width: 800px
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+fieldset {
+	border: 0
+}
+input {
+	border: 1px solid black;
+	width: 100%
+}
+footer {
+	clear: both
+}
+#chat {
+	width: 600px; 
+	float: left
+}
+#users {
+	width: 200px; 
+	float: left
+}
+#chat_area {
+	height: 200px; 
+	overflow-y: scroll
+}
+#users_area {
+	height: 200px
+}
+.public {
+	background-color: #B5D045
+}
+.own {
+	background-color: #66CCCC
+}
