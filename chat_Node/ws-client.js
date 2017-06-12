@@ -85,7 +85,7 @@ function command(msg) {
 			addMessage('Usuário ' + params[0] + ' alterou seu nome para ' + params[1] +' ...')
 			break
 		case '/newUser':
-			addMessage('Usuário ' + params[0] + ' entrou no chat...')
+			addMessage('Usuário ' + params[0] + ' entrou no chat...\n Clique no seu nome ao lado para alterá-lo...')
 			break
 	}
 	return true
