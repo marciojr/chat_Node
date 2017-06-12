@@ -41,6 +41,7 @@ function addUser (users) {
 		newUser.onclick = function () {
 			if (this.getAttribute('class') == 'own') {
 				webSocket.send('/name ' + prompt('Escolha seu nome para o chat: ', myName))
+
 			}
 		}
 		usersArea.appendChild(newUser)
@@ -81,9 +82,11 @@ function command(msg) {
 			break
 		case '/name_change':
 			changeUserName(params[0], params[1])
+			addMessage('Usuário ' + params[0] + ' alterou seu nome para ' + params[1] +' ...')
 			break
 		case '/newUser':
 			addMessage('Usuário ' + params[0] + ' entrou no chat...')
+			break
 	}
 	return true
 }
